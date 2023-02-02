@@ -12,6 +12,17 @@ returned from api.swgoh.help, but some values may not be the correct data
 type.  However, error codes and messages are not emulated, so any error handling
 based on the error responses cannot be expected to function properly.
 
+# Included endpoints
+
+- /auth/signin
+- /version
+- /swgoh/data
+- /swgoh/events
+- /swgoh/battles
+- /swgoh/players
+- /swgoh/guilds
+- /update - a bonus end point to force a version check, if for some reason it gets stuck and needs to refetch/rebuild its data
+
 # Caveats
 
 - GP values are not calculated.  .help's GP values were already incorrect.  Use something like swgoh-stats to calculate unit GPs.

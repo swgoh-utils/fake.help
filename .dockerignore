@@ -2,7 +2,6 @@
 .dockerignore
 DockerFile
 release.config.js
-data/
 .git/
 dist/
 bin/

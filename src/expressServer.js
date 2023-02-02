@@ -11,7 +11,6 @@ const comlinkStub = new ComlinkStub({
   url: process.env.CLIENT_URL,
   accessKey: process.env.ACCESS_KEY,
   secretKey: process.env.SECRET_KEY,
-  updateInterval: process.env.UPDATE_INTERVAL || 5,
   compression: process.env.COMPRESSION || true
 });
 
