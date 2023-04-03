@@ -781,7 +781,8 @@ module.exports = class HelpFormatter {
             defId: getUnitDefId(unitDefId),
             squadUnitType: squadUnitType
           }
-        }) : []
+        }) : [],
+        unformattedSquad: squad
       };
     }
 
