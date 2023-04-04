@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/swgoh-utils/fake.help/compare/v1.0.0...v1.1.0) (2023-04-04)
+
+
+### Features
+
+* add unformatted squad ([12e76e4](https://github.com/swgoh-utils/fake.help/commit/12e76e48da8d6295d374bec486d663bfab73e7df))
+
 # 1.0.0 (2023-02-02)
 
 
