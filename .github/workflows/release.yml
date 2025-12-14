@@ -14,12 +14,13 @@ jobs:
       contents: write
       issues: write
       packages: write
+      pull-requests: write
     name: Release
     runs-on: ubuntu-latest
     steps:
       -
         name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
           persist-credentials: false
@@ -42,5 +43,5 @@ jobs:
       - run: npm ci
       - run: npx semantic-release
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CI_REGISTRY_IMAGE: ${{ env.REGISTRY }}/${{ github.repository }}
