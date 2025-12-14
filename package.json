@@ -19,6 +19,7 @@
   "dependencies": {
     "@swgoh-utils/comlink": "^2.0.0",
     "async": "^3.2.4",
+    "body-parser": "^2.2.1",
     "compression": "^1.8.1",
     "cors": "^2.8.5",
     "express": "^5.2.1",
