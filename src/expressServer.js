@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const compression = require('compression')
 const bodyParser = require('body-parser');
 const helmet = require('helmet');
@@ -36,11 +37,7 @@ const TOKEN_DURATION = process.env.TOKEN_DURATION || 3600;
 const TOKEN_FILE_NAME = 'tokens';
 
 const app = express();
-app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-  next();
-});
+app.use(cors());
 
 // use helmet to protect from various common security issues
 app.use(helmet());
